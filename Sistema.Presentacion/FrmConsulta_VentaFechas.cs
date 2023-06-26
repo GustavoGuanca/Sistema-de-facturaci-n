@@ -103,14 +103,34 @@ namespace Sistema.Presentacion
         {
             try
             {
+
+                if (DgvListado.Rows.Count == 0)
+                {
+                    MessageBox.Show("No hay datos en el DataGridView.");
+                    return; // Salir del método para evitar que se ejecute el código siguiente
+                }
+
+                DataGridViewRow currentRow = DgvListado.CurrentRow;
+                if (currentRow == null)
+                {
+                    MessageBox.Show("No hay una fila seleccionada.");
+                    return;
+                }
+
+                if (currentRow.Cells["ID"].Value == null || currentRow.Cells["ID"].Value == DBNull.Value)
+                {
+                    MessageBox.Show("El valor de ID en la fila seleccionada es nulo.");
+                    return;
+                }
+
                 Variables.IdVenta = Convert.ToInt32(DgvListado.CurrentRow.Cells["ID"].Value);
                 Reportes.FrmComprobante_Venta reporte = new Reportes.FrmComprobante_Venta();
                 reporte.ShowDialog();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
         }
 
