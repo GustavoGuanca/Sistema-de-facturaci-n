@@ -34,81 +34,77 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.TxtClave = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnAcceder = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 76);
+            this.label1.Location = new System.Drawing.Point(24, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 132);
+            this.label2.Location = new System.Drawing.Point(24, 107);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Clave";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Turquoise;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(640, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(480, 41);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Turquoise;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(159, 6);
+            this.label3.Location = new System.Drawing.Point(136, 9);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(273, 33);
+            this.label3.Size = new System.Drawing.Size(78, 29);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Acceso al Sistema";
+            this.label3.Text = "Login";
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(105, 76);
+            this.TxtEmail.Location = new System.Drawing.Point(79, 62);
+            this.TxtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtEmail.Name = "TxtEmail";
-            this.TxtEmail.Size = new System.Drawing.Size(285, 22);
+            this.TxtEmail.Size = new System.Drawing.Size(215, 20);
             this.TxtEmail.TabIndex = 4;
             // 
             // TxtClave
             // 
-            this.TxtClave.Location = new System.Drawing.Point(105, 127);
+            this.TxtClave.Location = new System.Drawing.Point(79, 103);
+            this.TxtClave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtClave.Name = "TxtClave";
             this.TxtClave.PasswordChar = '*';
-            this.TxtClave.Size = new System.Drawing.Size(285, 22);
+            this.TxtClave.Size = new System.Drawing.Size(215, 20);
             this.TxtClave.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Sistema.Presentacion.Properties.Resources.login2;
-            this.pictureBox2.Location = new System.Drawing.Point(442, 48);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(197, 174);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
             // 
             // BtnAcceder
             // 
-            this.BtnAcceder.Location = new System.Drawing.Point(35, 177);
+            this.BtnAcceder.Location = new System.Drawing.Point(26, 144);
+            this.BtnAcceder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnAcceder.Name = "BtnAcceder";
-            this.BtnAcceder.Size = new System.Drawing.Size(171, 23);
+            this.BtnAcceder.Size = new System.Drawing.Size(128, 19);
             this.BtnAcceder.TabIndex = 7;
             this.BtnAcceder.Text = "Acceder";
             this.BtnAcceder.UseVisualStyleBackColor = true;
@@ -116,23 +112,35 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(219, 177);
+            this.BtnCancelar.Location = new System.Drawing.Point(164, 144);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(171, 23);
+            this.BtnCancelar.Size = new System.Drawing.Size(128, 19);
             this.BtnCancelar.TabIndex = 8;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Location = new System.Drawing.Point(105, 198);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(128, 19);
+            this.btnVolver.TabIndex = 9;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(639, 224);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(350, 255);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnAcceder);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.TxtClave);
             this.Controls.Add(this.TxtEmail);
             this.Controls.Add(this.label3);
@@ -140,11 +148,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,8 +166,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.TextBox TxtClave;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BtnAcceder;
         private System.Windows.Forms.Button BtnCancelar;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

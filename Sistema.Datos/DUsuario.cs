@@ -86,6 +86,34 @@ namespace Sistema.Datos
             }
         }
 
+
+        public DataTable LoginRfid(string Clave)
+        {
+            SqlDataReader Resultado;
+            DataTable Tabla = new DataTable();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon = Conexion.getInstancia().CrearConexion();
+                SqlCommand Comando = new SqlCommand("usuario_login_rfid", SqlCon); // Nombre actualizado del procedimiento almacenado
+                Comando.CommandType = CommandType.StoredProcedure;
+                Comando.Parameters.Add("@clave", SqlDbType.VarChar).Value = Clave;
+                SqlCon.Open();
+                Resultado = Comando.ExecuteReader();
+                Tabla.Load(Resultado);
+                return Tabla;
+            }
+            catch (Exception ex)
+            {
+                return null;
+                throw ex;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
         public string Existe(string Valor)
         {
             string Rpta = "";

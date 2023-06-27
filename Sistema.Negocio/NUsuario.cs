@@ -28,6 +28,12 @@ namespace Sistema.Negocio
             return Datos.Login(Email,Clave);
         }
 
+        public static DataTable LoginRfid(string Clave)
+        {
+            DUsuario Datos = new DUsuario();
+            return Datos.LoginRfid(Clave);
+        }
+
         public static string Insertar(int IdRol,string Nombre,string TipoDocumento,string NumDocumento, string Direccion,string Telefono,string Email,string Clave)
         {
             DUsuario Datos = new DUsuario();

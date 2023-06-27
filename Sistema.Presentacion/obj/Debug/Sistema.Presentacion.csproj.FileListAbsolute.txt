@@ -148,3 +148,4 @@ C:\Users\guanc\OneDrive\Escritorio\C#\Sistema\Sistema.Presentacion\bin\Debug\zh-
 C:\Users\guanc\OneDrive\Escritorio\C#\Sistema\Sistema.Presentacion\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\guanc\OneDrive\Escritorio\C#\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.Reportes.FrmComprobante_Venta.resources
 C:\Users\guanc\OneDrive\Escritorio\C#\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.frmConsulta_VentaFechas.resources
+C:\Users\guanc\OneDrive\Escritorio\C#\Sistema\Sistema.Presentacion\obj\Debug\Sistema.Presentacion.FrmLoginTarjeta.resources

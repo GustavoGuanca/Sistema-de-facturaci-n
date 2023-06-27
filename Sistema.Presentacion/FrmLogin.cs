@@ -17,7 +17,7 @@ namespace Sistema.Presentacion
         {
             InitializeComponent();
         }
-
+  
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -58,5 +58,14 @@ namespace Sistema.Presentacion
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            FrmLoginTarjeta frmLoginTarjeta = new FrmLoginTarjeta();
+            frmLoginTarjeta.Show();
+            this.Hide();
+        }
+
+       
     }
 }

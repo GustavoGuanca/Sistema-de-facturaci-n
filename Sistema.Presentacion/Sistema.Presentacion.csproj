@@ -184,6 +184,12 @@
     <Compile Include="FrmVista_ProveedorIngreso.Designer.cs">
       <DependentUpon>FrmVista_ProveedorIngreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLoginTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginTarjeta.Designer.cs">
+      <DependentUpon>FrmLoginTarjeta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reportes\dsSistema.Designer.cs">
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmVista_ProveedorIngreso.resx">
       <DependentUpon>FrmVista_ProveedorIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginTarjeta.resx">
+      <DependentUpon>FrmLoginTarjeta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

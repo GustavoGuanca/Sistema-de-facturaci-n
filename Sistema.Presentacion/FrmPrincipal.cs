@@ -116,6 +116,10 @@ namespace Sistema.Presentacion
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            if (this.ParentForm is FrmLoginTarjeta formularioLogin)
+            {
+                formularioLogin.Hide();
+            }
             StBarraInferior.Text = "Organización contable, Usuario: " + this.Nombre;
             MessageBox.Show("Bienvenido: "+ this.Nombre,"Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
@@ -175,10 +179,12 @@ namespace Sistema.Presentacion
         private void SalirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult Opcion;
-            Opcion = MessageBox.Show("Deseas salir del Sistema?","Sistema de Ventas",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            Opcion = MessageBox.Show("Deseas cerrar sesión del Sistema?","Sistema de Ventas",MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
             if (Opcion == DialogResult.OK)
             {
-                Application.Exit();
+                FrmLoginTarjeta frmLoginTarjeta = new FrmLoginTarjeta();
+                frmLoginTarjeta.Show();
+                this.Hide();
             }
         }
 

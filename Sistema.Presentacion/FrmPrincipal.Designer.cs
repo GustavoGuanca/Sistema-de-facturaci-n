@@ -66,8 +66,8 @@
             this.StBarraInferior = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.toolStrip = new System.Windows.Forms.ToolStrip();
-            this.TsVentas = new System.Windows.Forms.ToolStripButton();
             this.TsCompras = new System.Windows.Forms.ToolStripButton();
+            this.TsVentas = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
@@ -330,8 +330,8 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.salirToolStripMenuItem.Text = "Cerrar Sesión";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItem_Click);
             // 
             // statusStrip
@@ -363,15 +363,6 @@
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
-            // TsVentas
-            // 
-            this.TsVentas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.TsVentas.Image = global::Sistema.Presentacion.Properties.Resources.ventas_m;
-            this.TsVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.TsVentas.Name = "TsVentas";
-            this.TsVentas.Size = new System.Drawing.Size(24, 24);
-            this.TsVentas.Text = "toolStripButton2";
-            // 
             // TsCompras
             // 
             this.TsCompras.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -380,6 +371,15 @@
             this.TsCompras.Name = "TsCompras";
             this.TsCompras.Size = new System.Drawing.Size(24, 24);
             this.TsCompras.Text = "toolStripButton1";
+            // 
+            // TsVentas
+            // 
+            this.TsVentas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TsVentas.Image = global::Sistema.Presentacion.Properties.Resources.ventas_m;
+            this.TsVentas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TsVentas.Name = "TsVentas";
+            this.TsVentas.Size = new System.Drawing.Size(24, 24);
+            this.TsVentas.Text = "toolStripButton2";
             // 
             // FrmPrincipal
             // 
